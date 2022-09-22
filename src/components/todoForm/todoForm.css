@@ -1,0 +1,29 @@
+.todo-form-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+  width: 40vw;
+  margin: 3em auto;
+}
+
+.todo-input {
+  padding: 0.5em 1em;
+  font-size: 1.1rem;
+  border-radius: 5px;
+}
+
+.todo-btn {
+  padding: 0.5em 1em;
+  font-size: 1.1em;
+  border-radius: 5px;
+  background-color: #8000ff;
+  color: white;
+}
+
+.todo-list {
+  width: 30%;
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
