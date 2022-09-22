@@ -1,0 +1,12 @@
+.taxonomy-wrapper {
+  margin-top: 2.5em;
+}
+.recurcive-btn {
+  padding: 0.5em 1em;
+  font-size: 1em;
+  border-radius: 5px;
+  color: white;
+  background-color: #660033;
+  border: none;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
