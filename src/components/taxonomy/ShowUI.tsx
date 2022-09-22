@@ -18,14 +18,7 @@ const ShowUI = ({ obj }: any) => {
                   setId(i);
                   setShow(!show);
                 }}
-                style={{
-                  width: "80px",
-                  left: 25,
-                  margin: "0 auto",
-                  paddingTop: "6px",
-                  paddingLeft: "50px",
-                  borderLeft: "1px solid black",
-                }}
+                className="show-ui-wrapper"
                 key={i}
               >
                 {Object.keys(obj[item]).length !== 0 ? (
@@ -33,7 +26,7 @@ const ShowUI = ({ obj }: any) => {
                     {item}
                   </button>
                 ) : (
-                  <p style={{ padding: "6px 0", margin: "0" }}>{item} </p>
+                  <p className="show-ui-content">{item} </p>
                 )}
 
                 {show && id === i && <ShowUI obj={obj[item]} />}

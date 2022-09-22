@@ -22,23 +22,9 @@ const Taxonomy: FC = () => {
       }
       if (arr[index] in obj) {
         elmConvertToObj(obj[arr[index]], arr, index + 1);
-        // console.log(
-        //   "arr if",
-        //   obj[arr[index]],
-        //   arr[index],
-        //   arr.length - 1,
-        //   index
-        // );
       } else {
         obj[arr[index]] = {};
         elmConvertToObj(obj[arr[index]], arr, index + 1);
-        // console.log(
-        //   "arr else",
-        //   obj[arr[index]],
-        //   arr[index],
-        //   arr.length - 1,
-        //   index
-        // );
       }
     }
   };
@@ -47,7 +33,7 @@ const Taxonomy: FC = () => {
 
   return (
     <div className="taxonomy-wrapper">
-      <div>Taxonomy Using Recurcive function</div>
+      <div className="taxonomy-heading">Taxonomy Using Recurcive function</div>
       <ShowUI obj={obj} />
     </div>
   );
