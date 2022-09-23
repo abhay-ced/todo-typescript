@@ -7,7 +7,6 @@ const ShowUI = ({ obj }: any) => {
 
   return (
     <>
-      {/* first method */}
       <div>
         {entries &&
           entries.map((item, i) => {
@@ -28,29 +27,11 @@ const ShowUI = ({ obj }: any) => {
                 ) : (
                   <p className="show-ui-content">{item} </p>
                 )}
-
                 {show && id === i && <ShowUI obj={obj[item]} />}
               </div>
             );
           })}
       </div>
-      {/* <div>
-        <select
-          onChange={(e) => {
-            e.stopPropagation();
-            setShowDrop(!showDrop);
-          }}
-        >
-          {entries &&
-            entries.map((item) => {
-              return <option value={item}> {item} </option>;
-            })}
-        </select>
-        {entries &&
-          entries.map((item) => {
-            return <div>{showDrop && <ShowUI obj={obj[item]} />}</div>;
-          })}
-      </div> */}
     </>
   );
 };

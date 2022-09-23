@@ -51,6 +51,11 @@ const TodoForm: FC = () => {
     setEditId(id);
   };
 
+  const dateFormatter = new Intl.DateTimeFormat(undefined, {
+    dateStyle: "medium",
+    timeStyle: "medium",
+  });
+
   return (
     <div>
       <div className="todo-form-wrapper">
@@ -65,6 +70,7 @@ const TodoForm: FC = () => {
           {editId ? "Update Todo" : "Add Todo"}
         </button>
       </div>
+      {/* <div> Show Time {dateFormatter.format(Date.parse(new Date()))} </div>  */}
       <div className="todo-list">
         {todoList &&
           todoList?.map((item: ITask) => {

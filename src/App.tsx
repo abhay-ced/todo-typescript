@@ -23,7 +23,7 @@ const App: FC = () => {
       </button>
       {showScreen === "todo" && <TodoApp />}
       {showScreen === "taxonomy" && <Taxonomy />}
-      {/* {showScreen === "taxonomy" && <Txc />} */}
+      {/* <Txc /> */}
     </div>
   );
 };

@@ -1,12 +1,10 @@
-import React, { FC, useState, useEffect } from "react";
+import React, { FC } from "react";
 import ShowUI from "./ShowUI";
 import { shortData, stringData } from "./taxoData";
 
 import "./taxonomy.css";
 const Taxonomy: FC = () => {
-  const [objData, setObjData] = useState<Object>({});
   let obj = {};
-
   const formatedArray = shortData
     .split("\n")
     .map((item) => item.split(" >").map((i) => i.trim()));
@@ -28,9 +26,7 @@ const Taxonomy: FC = () => {
       }
     }
   };
-
   arrayToObject(obj);
-
   return (
     <div className="taxonomy-wrapper">
       <div className="taxonomy-heading">Taxonomy Using Recurcive function</div>
