@@ -5,6 +5,8 @@ import "./todoList.css";
 // interface IProps {
 //   task: string;
 //   id: string;
+//   handleEdit: () => void;
+//   handleDelete: () => void;
 // }
 
 const TodoList = ({ item, handleDelete, handleEdit }: any) => {
